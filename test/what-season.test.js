@@ -232,7 +232,7 @@ describe('What season', () => {
 
             Object.setPrototypeOf(deeperFakeDate, Object.getPrototypeOf(new Date()));
 
-           expect(() => getSeason(deeperFakeDate)).to.throw();
+            expect(() => getSeason(deeperFakeDate)).to.throw();
         });
     });
 });
