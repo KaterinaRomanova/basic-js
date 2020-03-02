@@ -32,6 +32,7 @@ describe('Extended repeater', () => {
 
     it.optional('supports basic addition', () => {
       assert.equal(repeater('la', { repeatTimes: 3, separator: 's', addition: '+', additionRepeatTimes: 1 }), 'la+sla+sla+');
+      
       assert.equal(repeater('LALA', { repeatTimes: 3, separator: 's', addition: '++', additionRepeatTimes: 1 }), 'LALA++sLALA++sLALA++');
     });
 
